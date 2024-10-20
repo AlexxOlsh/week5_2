@@ -58,18 +58,18 @@
 
 ### Пример сценария
 
-`Bash
-###### Создать группу для разработчиков
-groupadd developers
-
-###### Создать пользователя и добавить его в группу разработчиков
-adduser newdev
-usermod -a -G developers newdev
-
-###### Создать каталог для проектов и дать группе разработчиков права на запись
-mkdir /var/projects
-chown root:developers /var/projects
-chmod 775 /var/projects
-
-###### Разрешить пользователю newdev использовать sudo для обновления системы
-visudo  # Добавить строку: newdev ALL=(ALL) ALL`
+    `Bash
+    ###### Создать группу для разработчиков
+    groupadd developers
+    
+    ###### Создать пользователя и добавить его в группу разработчиков
+    adduser newdev
+    usermod -a -G developers newdev
+    
+    ###### Создать каталог для проектов и дать группе разработчиков права на запись
+    mkdir /var/projects
+    chown root:developers /var/projects
+    chmod 775 /var/projects
+    
+    ###### Разрешить пользователю newdev использовать sudo для обновления системы
+    visudo  # Добавить строку: newdev ALL=(ALL) ALL`
